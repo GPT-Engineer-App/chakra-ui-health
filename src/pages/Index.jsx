@@ -9,7 +9,7 @@ const Index = () => {
     <Container maxW="container.xl" p={0}>
       <Flex direction="column" minH="100vh">
         {/* Navbar */}
-        <Box as="nav" w="full" bg={bgColor} boxShadow="sm" py={2} px={4}>
+        <Box as="nav" w="full" bg="white" boxShadow="lg" py={2} px={4}>
           <Flex justify="space-between" align="center">
             <Text fontSize="lg" fontWeight="bold">
               HealthFocus
@@ -32,7 +32,7 @@ const Index = () => {
               Empowering Your Health Journey
             </Heading>
             <Text fontSize="xl">Join us to unlock your personalized health insights.</Text>
-            <Button leftIcon={<FaRocket />} size="lg" colorScheme="red">
+            <Button leftIcon={<FaRocket />} size="lg" backgroundColor="primary">
               Get Started
             </Button>
           </Stack>
@@ -75,7 +75,7 @@ const Index = () => {
         </Flex>
 
         {/* Footer */}
-        <Box as="footer" bg="gray.800" color="gray.400" py={5}>
+        <Box as="footer" bg="white" color="gray.400" py={5}>
           <Flex direction={{ base: "column", md: "row" }} justify="space-between" align="center" px={10}>
             <Text>&copy; {new Date().getFullYear()} HealthFocus. All rights reserved.</Text>
             <List spacing={4} direction="row">
@@ -98,7 +98,7 @@ const Index = () => {
 
 const FeatureCard = ({ icon, title, description }) => {
   return (
-    <Stack spacing={4} align="center" p={5} boxShadow="md" borderRadius="md">
+    <Stack spacing={4} align="center" p={5} boxShadow="lg" borderRadius="lg">
       <Box as={icon} size="40px" />
       <Text fontWeight="bold">{title}</Text>
       <Text textAlign="center">{description}</Text>

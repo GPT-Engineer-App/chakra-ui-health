@@ -12,7 +12,19 @@ const colors = {
 };
 
 const theme = extendTheme({
-  colors,
+  colors: {
+    brand: {
+      900: "#1a365d",
+      800: "#153e75",
+      700: "#2a69ac",
+    },
+    primary: "#8a2be2",
+    background: "#ffffff",
+    text: {
+      primary: "#000000",
+      secondary: "#808080",
+    },
+  },
   fonts: {
     heading: "Inter, sans-serif",
     body: "Inter, sans-serif",
